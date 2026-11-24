@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('status');
             $table->decimal('total_price');
             $table->timestamp('order_date');
+            $table->timestamp('delivery_time')->nullable();
             $table->timestamps();
         });
     }
